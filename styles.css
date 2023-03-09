@@ -55,7 +55,9 @@ body {
     font-style: oblique;
 }
 
-.submit {
+ input[type="submit"] {
+    display: block;
+    margin: 0 auto;
     font-size: 30px;
     background: #56E991;
     transition: all 0.7s ease-in-out;
@@ -71,8 +73,7 @@ body {
     background-size: cover;
     margin-top: 12px;
     font-style: oblique;
-
-}
+ }
 
 button:hover {
     background-color: #00A975;

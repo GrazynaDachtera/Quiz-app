@@ -40,29 +40,27 @@
             <input type="radio" name="answer-2">yellow, blue and black<br>
             <input type="radio" name="answer-3">black and white<br>
         </div>
-
-
     </div>
 
-    <input type="submit" name="submit" value="Submit" onClick="result()">
-    <script type="text/javascript">
-        function result()
-        {
-            var score=0;
-            if(document.getElementById('correct-3').checked)
-            {	score++;
+        <input type="submit" name="submit" id="Submit" value="Submit" onClick="result()">
+        <script type="text/javascript">
+
+        function result() {
+            let score = 0;
+            if (document.getElementById('correct-3').checked) {
+                score++;
             }
-            if(document.getElementById('correct-2').checked)
-            {	score++;
+            if (document.getElementById('correct-2').checked) {
+                score++;
             }
-            if(document.getElementById('correct-1').checked)
-            {	score++;
+            if (document.getElementById('correct-1').checked) {
+                score++;
             }
-            alert("Your score is:"+score);
+            alert("Your current score is:" + score);
             // to print on browser
             // document.write("Your score is:"+score);
         }
     </script>
-    </div>
+</div>
 </body>
 </html>
