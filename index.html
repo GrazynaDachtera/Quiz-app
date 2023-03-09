@@ -10,36 +10,59 @@
 <body>
 <div class="quiz-container">
     <div class="header">
-        <h1 id="main-question">Question text</h1>
+        <h1 id="main-question">Quick questions</h1>
     </div>
     <div class="quiz-answers">
-        <ul>
-            <li>
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a-1">Answer-1</label>
-            </li>
 
-            <li>
-                <input type="radio" name="answer" id="b" class="answer">
-                <label for="b" id="b-1">Answer-2</label>
-            </li>
+        <div class="section">
+            <div class="question">
+                Q1. What is the capital city of United Kingdom?
+            </div>
+            <input type="radio" name="answer-1">Warsow<br>
+            <input type="radio" name="answer-2">Moscow<br>
+            <input type="radio" name="answer-3" id="correct-3">London<br>
+        </div>
 
-            <li>
-                <input type="radio" name="answer" id="c" class="answer">
-                <label for="c" id="c-1">Answer-3</label>
-            </li>
+        <div class="section">
+            <div class="question">
+                Q2. What is the population of England?
+            </div>
+            <input type="radio" name="answer-1">100 million<br>
+            <input type="radio" name="answer-2" id="correct-2">67 million<br>
+            <input type="radio" name="answer-3">20 million<br>
+        </div>
 
-            <li>
-                <input type="radio" name="answer" id="d" class="answer">
-                <label for="d" id="d-1">Answer-4</label>
-            </li>
-        </ul>
+        <div class="section">
+            <div class="question">
+                Q3. Which colours are on the English flag?
+            </div>
+            <input type="radio" name="answer-1" id="correct-1">red, white and blue<br>
+            <input type="radio" name="answer-2">yellow, blue and black<br>
+            <input type="radio" name="answer-3">black and white<br>
+        </div>
+
+
     </div>
 
-    <button id="submit">Submit</button>
-
-</div>
-
-<script src="script.js"></script>
+    <input type="submit" name="submit" value="Submit" onClick="result()">
+    <script type="text/javascript">
+        function result()
+        {
+            var score=0;
+            if(document.getElementById('correct-3').checked)
+            {	score++;
+            }
+            if(document.getElementById('correct-2').checked)
+            {	score++;
+            }
+            if(document.getElementById('correct-1').checked)
+            {	score++;
+            }
+            alert("Your score is:"+score);
+            // to print on browser
+            // document.write("Your score is:"+score);
+        }
+    </script>
+    </div>
 </body>
 </html>
