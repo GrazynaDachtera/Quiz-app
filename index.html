@@ -18,42 +18,42 @@
             <div class="question">
                 Q1. What is the capital city of United Kingdom?
             </div>
-            <input type="radio" name="answer-1">Warsow<br>
-            <input type="radio" name="answer-2">Moscow<br>
-            <input type="radio" name="answer-3" id="correct-3">London<br>
+            <input type="radio" name="q1">Warsow<br>
+            <input type="radio" name="q1">Moscow<br>
+            <input type="radio" name="q1" id="correct-q1">London<br>
         </div>
 
         <div class="section">
             <div class="question">
                 Q2. What is the population of England?
             </div>
-            <input type="radio" name="answer-1">100 million<br>
-            <input type="radio" name="answer-2" id="correct-2">67 million<br>
-            <input type="radio" name="answer-3">20 million<br>
+            <input type="radio" name="q2">100 million<br>
+            <input type="radio" name="q2" id="correct-q2">67 million<br>
+            <input type="radio" name="q2">20 million<br>
         </div>
 
         <div class="section">
             <div class="question">
                 Q3. Which colours are on the English flag?
             </div>
-            <input type="radio" name="answer-1" id="correct-1">red, white and blue<br>
-            <input type="radio" name="answer-2">yellow, blue and black<br>
-            <input type="radio" name="answer-3">black and white<br>
+            <input type="radio" name="q3" id="correct-q3">red, white and blue<br>
+            <input type="radio" name="q3">yellow, blue and black<br>
+            <input type="radio" name="q3">black and white<br>
         </div>
     </div>
 
-        <input type="submit" name="submit" id="Submit" value="Submit" onClick="result()">
-        <script type="text/javascript">
+    <input type="submit" name="submit" id="Submit" value="Submit" onClick="result()">
+    <script type="text/javascript">
 
         function result() {
             let score = 0;
-            if (document.getElementById('correct-3').checked) {
+            if (document.getElementById('correct-q1').checked) {
                 score++;
             }
-            if (document.getElementById('correct-2').checked) {
+            if (document.getElementById('correct-q2').checked) {
                 score++;
             }
-            if (document.getElementById('correct-1').checked) {
+            if (document.getElementById('correct-q3').checked) {
                 score++;
             }
             alert("Your current score is:" + score);
